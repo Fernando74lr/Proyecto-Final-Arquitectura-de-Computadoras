@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>223</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Momnitoreo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../Downloads/cheems.png</normaloff>../../../../../Downloads/cheems.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(38, 70, 83);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>787</width>
+      <height>92</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QLabel" name="labelTemperatura">
+       <property name="font">
+        <font>
+         <family>OCR A Extended</family>
+         <pointsize>30</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;</string>
+       </property>
+       <property name="text">
+        <string>---</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>System</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+background-color: rgb(231, 111, 81);
+border-radius: 10px;
+border-style: solid;
+</string>
+       </property>
+       <property name="text">
+        <string>  SENSOR DE HUMEDAD  </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelProximidad">
+       <property name="font">
+        <font>
+         <family>OCR A Extended</family>
+         <pointsize>30</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+background-color: rgb(203, 203, 203);
+border-radius: 20px;</string>
+       </property>
+       <property name="text">
+        <string>---</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>System</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+border-radius: 10px;
+border-style: solid;
+background-color: rgb(233, 196, 106);</string>
+       </property>
+       <property name="text">
+        <string>  SENSOR DE ILUMINACION  </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>System</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+border-radius: 10px;
+border-style: solid;
+background-color: rgb(244, 162, 97);</string>
+       </property>
+       <property name="text">
+        <string>  SENSOR DE TEMPERATURA  </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QProgressBar" name="progressBar">
+       <property name="font">
+        <font>
+         <family>System</family>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Esta es una prueba&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+	background-color: rgba(211, 211, 211, .5);
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-radius: 10px;
+	text-align: center;
+}
+
+QProgressBar::chunk{
+	border-radius: 10px;
+	background-color: qlineargradient(spread:pad, x1:0.189732, y1:0.204, x2:0.907, y2:0.125, stop:0 rgba(223, 223, 111, 255), stop:1 rgba(218, 72, 109, 255));
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>785</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>781</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Creado por team uwu: Alan Suárez, Benjamín Gutierrez, Fernando López, Kaleb Antonio
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelRefresh">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>120</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Extended</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Actualizado hace: -- s</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFecha">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Extended</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Fecha: --------------------</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
