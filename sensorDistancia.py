@@ -22,19 +22,7 @@ class Tools(object):
 			end = time.time()
 		 
 		sig_time = end-start
-		 
-		#CM:
-		distance = sig_time / 0.000058
-		 
-		#inches:
-		#distance = sig_time / 0.000148
-		return distance
-		#print('Distance: %.2f cm' %distance)
+		distance = sig_time / 0.000058 # cm
 
-'''	 
-while True:
-	print('Distance: %.2f cm' %sensorUltrasonico())
-	time.sleep(1)
-'''	
-#GPIO.cleanup()
+		return distance
 
